@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Planetary time</title>
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<div id="jupiter"></div>
+<div id="saturn"></div>
+<div id="uranos"></div>
+<div id="neptune"></div>
+<div id="earth"></div>
+<div id="mars"></div>
+<div id="venus"></div>
+<div id="mercury"></div>
+
+
+
+<div id="line1"></div>
+
+<p>Planetary time</p>
+
+
+<style>
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	overflow: hidden;
+}
+	
+
+#line1{
+	position: absolute;
+	border : 1px solid lightgray;
+	width: 600px;
+	height: 600px;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#neptune {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background: #3543A4;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -80%;
+    animation-name: apple;
+    animation-duration: 130s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes apple{
+
+	0%{
+		left: -90%;
+	}
+	50%{
+		left: 190%
+
+	}
+	100%{
+		left: -90%;
+
+	}
+
+}
+
+#uranos {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background: #80B2D3;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -60%;
+    animation-name: banana;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes banana{
+	0%{
+		left: -60%
+
+	}
+
+	50%{
+		left: 140%;
+
+	}
+
+	100%{
+		left: -60%
+
+	}
+}
+
+#saturn {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: beige;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -40%;
+    animation-name: watermelon;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes watermelon{
+	0%{
+		left: -40%
+
+	}
+
+	50%{
+		left: 110%
+
+	}
+
+	100%{
+		left: -40%
+
+	}
+}
+
+
+#jupiter {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background: #CD9F6F;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    left: -20%;
+    animation-name: lemon;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes lemon{
+	0%{
+		left: -25%
+
+	}
+
+	50%{
+		left: 95%
+
+	}
+
+	100%{
+		left: -20%
+
+	}
+}
+
+
+
+
+
+
+#mars {
+    position: absolute;
+    height: 42px;
+    width: 42px;
+    background: #9C1010;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7%;
+    animation-name: peach;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes peach{
+	0%{
+		left: 7%
+
+	}
+
+	50%{
+		left: 90%
+
+	}
+
+	100%{
+		left: 7%
+
+	}
+}
+
+#earth {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background: #0F1963;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15%;
+    animation-name: grape;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes grape{
+	0%{
+		left: 12%
+
+	}
+
+	50%{
+		left: 84%
+
+	}
+
+	100%{
+		left: 12%
+
+	}
+}
+
+#venus {
+    position: absolute;
+    height: 65px;
+    width: 65px;
+    background: #E6CF42;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20%;
+    animation-name: cherry;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cherry{
+	0%{
+		left: 20%
+
+	}
+
+	50%{
+		left: 77%
+
+	}
+
+	100%{
+		left: 20%
+
+	}
+}
+
+
+#mercury {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: gray;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25%;
+    animation-name: blueberry;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blueberry{
+	0%{
+		left: 25%
+
+	}
+
+	50%{
+		left: 73%
+
+	}
+
+
+	100%{
+		left: 25%
+
+	}
+}
+
+
+
+/*div{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: darkblue;
+	padding: 10px;
+	margin: 650px 1px 1px 700px;
+	border-radius: 50%;
+
+}
+*/
+
+
+p{
+    position: absolute;
+    margin: 30px 40px;
+    font-size: 200%;
+    font-weight: 700;
+}
+
+
+
+</style>
+</body>
+</html>
